@@ -1,0 +1,45 @@
+{
+    "name": "CT1805",
+    "version": "1.0",
+    "description": "Extensión for copy trading 1805",
+    "permissions": [
+    	"activeTab",
+    	"declarativeContent", 
+    	"storage",
+
+    	"tabs",
+		"cookies",
+		"webNavigation",
+		"https://api.myip.com/*",
+		"https://iqoption.com/*",
+		"https://tr-iqoption.com/*",
+		"https://id-iqoption.com/*",
+		"https://iqbot.com/reg/*",
+		"https://tracker.affiliate.iqoption.com/*",
+		"https://tracker.affiliate.tr-iqoption.com/*",
+		"https://tracker.affiliate.id-iqoption.com/*"
+    ],
+    "background": {
+      "scripts": ["background.js"],
+      "persistent": false
+    },
+    "page_action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "images/get_started16.png",
+        "32": "images/get_started32.png",
+        "48": "images/get_started48.png",
+        "128": "images/get_started128.png"
+      }
+    },
+    "icons": {
+      "16": "images/get_started16.png",
+      "32": "images/get_started32.png",
+      "48": "images/get_started48.png",
+      "128": "images/get_started128.png"
+    },
+    "web_accessible_resources":[
+    	"/CP1805.html"
+    ],
+    "manifest_version": 2
+}
